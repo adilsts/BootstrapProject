@@ -47,8 +47,79 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
+          <div class="mx-2">
+
+            <button class="btn btn-danger"data-toggle="modal" data-target="#loginModal ">Sign in</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign up</button>
+
+          </div>
         </div>
       </nav>
+
+<!-- Sign-in Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login to F-Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Sign-up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up to F-Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cexampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -104,8 +175,8 @@
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">Featured post</h3>
+              <strong class="d-inline-block mb-2 text-primary">App</strong>
+              <h3 class="mb-0">App Development</h3>
               <div class="mb-1 text-muted">Nov 12</div>
               <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="stretched-link">Continue reading</a>
@@ -119,8 +190,8 @@
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">Post title</h3>
+              <strong class="d-inline-block mb-2 text-success">Flutter</strong>
+              <h3 class="mb-0">Flutter App</h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="stretched-link">Continue reading</a>
@@ -139,8 +210,8 @@
         <div class="col-md-6">
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">Featured post</h3>
+              <strong class="d-inline-block mb-2 text-primary">Python</strong>
+              <h3 class="mb-0">Learn Python</h3>
               <div class="mb-1 text-muted">Nov 12</div>
               <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="stretched-link">Continue reading</a>
@@ -155,7 +226,7 @@
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">Post title</h3>
+              <h3 class="mb-0">Web Design</h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               <a href="#" class="stretched-link">Continue reading</a>
